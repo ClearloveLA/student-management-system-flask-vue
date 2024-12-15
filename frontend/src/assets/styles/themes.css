@@ -1,0 +1,213 @@
+/* 浅色主题 */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --sidebar-bg: #343a40;
+  --sidebar-text: #ffffff;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --input-text: #212529;
+  --dropdown-bg: #ffffff;
+  --hover-bg: #f8f9fa;
+  --active-bg: #e9ecef;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --table-hover: rgba(0, 0, 0, 0.075);
+}
+
+/* 深色主题 */
+[data-theme="dark"] {
+  --bg-primary: #212529;
+  --bg-secondary: #343a40;
+  --text-primary: #f8f9fa;
+  --text-secondary: #adb5bd;
+  --border-color: #495057;
+  --sidebar-bg: #1a1d20;
+  --sidebar-text: #ffffff;
+  --card-bg: #2c3034;
+  --input-bg: #2c3034;
+  --input-text: #f8f9fa;
+  --dropdown-bg: #2c3034;
+  --hover-bg: #373b3e;
+  --active-bg: #424649;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --table-hover: rgba(255, 255, 255, 0.075);
+}
+
+/* 通用样式 */
+:root {
+  --primary-color: #0d6efd;
+  --primary-light: rgba(13, 110, 253, 0.1);
+  --primary-dark: #0b5ed7;
+}
+
+/* 应用主题变量 */
+body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 卡片样式 */
+.card, .modal-content, .settings-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+/* 文本颜色 */
+.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* 导航栏 */
+.navbar-dark {
+  background-color: var(--primary-color) !important;
+}
+
+/* 侧边栏 */
+#sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+}
+
+/* 按钮主题色 */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* 表单元素 */
+.form-control, .form-select {
+  background-color: var(--input-bg);
+  border-color: var(--border-color);
+  color: var(--input-text);
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: var(--input-bg);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem var(--primary-light);
+  color: var(--input-text);
+}
+
+/* 下拉菜单 */
+.dropdown-menu {
+  background-color: var(--dropdown-bg);
+  border-color: var(--border-color);
+  box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+
+.dropdown-item {
+  color: var(--text-primary);
+}
+
+.dropdown-item:hover {
+  background-color: var(--hover-bg);
+  color: var(--text-primary);
+}
+
+.dropdown-header {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+/* 表格主题 */
+.table {
+  color: var(--text-primary);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: var(--table-hover);
+}
+
+/* 设置页面特定样式 */
+.theme-option {
+  color: var(--text-primary);
+}
+
+.theme-option:hover {
+  background-color: var(--hover-bg);
+}
+
+.theme-option.active {
+  background-color: var(--active-bg);
+}
+
+.device-item {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.notification-setting:hover {
+  background-color: var(--hover-bg);
+}
+
+/* 表单开关 */
+.form-check-input {
+  background-color: var(--input-bg);
+  border-color: var(--border-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* 过渡动画 */
+.card,
+.form-control,
+.form-select,
+.btn,
+.dropdown-menu,
+.table {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-primary);
+}
+
+/* 选中文本样式 */
+::selection {
+  background-color: var(--primary-light);
+  color: var(--text-primary);
+} 

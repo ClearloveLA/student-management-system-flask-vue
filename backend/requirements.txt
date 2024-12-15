@@ -1,0 +1,28 @@
+# requirements.txt
+
+# 核心框架
+Flask==3.0.2
+Flask-SQLAlchemy==3.1.1
+Flask-Cors==4.0.0
+Flask-JWT-Extended==4.6.0
+
+# 数据库相关
+PyMySQL==1.1.0
+SQLAlchemy==2.0.25
+
+# 环境配置
+python-dotenv==1.0.1
+
+# 工具包
+Faker==22.7.0
+Werkzeug==3.0.1
+click==8.1.7
+
+# 数据处理
+pandas==2.2.0
+
+# 时间处理
+pytz==2024.1
+
+# 测试相关
+pytest==8.0.0

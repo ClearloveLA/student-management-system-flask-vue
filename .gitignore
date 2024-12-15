@@ -1,0 +1,17 @@
+# 后端忽略
+/backend/venv/
+/backend/__pycache__/
+/backend/**/__pycache__/
+/backend/.env
+/backend/.idea/
+/backend/*.pyc
+
+# 前端忽略
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.*.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
